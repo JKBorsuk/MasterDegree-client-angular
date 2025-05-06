@@ -1,0 +1,27 @@
+.login-wrapper {
+    flex: 1;
+    align-content: center;
+}
+
+.login-container {
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.login-container, .form-fields, .form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container, .form-fields {
+    gap: 1em;
+}
+
+.login-title {
+    text-align: center;
+    font-size: large;
+}

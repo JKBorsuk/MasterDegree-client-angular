@@ -1,0 +1,11 @@
+master-degree-sidebar {
+    max-width: 300px;
+    width: 100%;
+}
+
+::ng-deep register-page, 
+::ng-deep login-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}

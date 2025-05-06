@@ -1,0 +1,15 @@
+<div class="custom-input-container">
+    <input [id]="'empty-input-' + tmp"
+        [name]="name"
+        [placeholder]="defaultPlaceholder ? placeholder : ''"
+        class="custom-input no-icon" 
+        [type]="type"
+        [defaultValue]="defaultValue ?? ''"
+        (input)="change($event)"
+        [disabled]="disabled" />
+    <ng-template [ngIf]="defaultPlaceholder != undefined">
+        <label [htmlFor]="'empty-input-'+tmp" class="empty-input-placeholder">
+            {{ placeholder }}
+        </label>
+    </ng-template>
+</div>

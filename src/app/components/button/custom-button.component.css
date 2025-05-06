@@ -1,0 +1,26 @@
+button.custom-button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+button.custom-button {
+    border-radius: 10px;
+    padding: .6em 1.6em;
+    text-align: center;
+    min-width: 175px;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    transition: .2s all;
+}
+
+button.custom-button:active {
+    background-color: var(--blue);
+    color: white;
+}

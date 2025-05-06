@@ -1,0 +1,27 @@
+.register-wrapper {
+    flex: 1;
+    align-content: center;
+}
+
+.register-container {
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.register-container, .form-fields, .form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container, .form-fields {
+    gap: 1em;
+}
+
+.register-title {
+    text-align: center;
+    font-size: large;
+}

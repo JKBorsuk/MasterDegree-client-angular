@@ -1,0 +1,26 @@
+.main-page-paging {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.main-page-paging > .main-paging-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+.main-page-paging > .main-paging-container > img.paging-icon {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.main-page-paging > .main-paging-container > div {
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+}

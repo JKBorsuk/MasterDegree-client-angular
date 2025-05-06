@@ -1,0 +1,19 @@
+<div>
+    <main>
+        <div class="main-page-product-grid">
+        <ng-template [ngIf]="products.length == 0">Brak ulubionych produktów</ng-template>
+        <ng-template [ngIf]="products.length != 0">
+            <ng-container *ngFor="let product of products">
+                <product-grid-item [isFavorite]="true" [product]="product" (reloadDataFunc)="loadData()"></product-grid-item>
+            </ng-container>
+        </ng-template>
+        </div>
+        <ng-template [ngIf]="products.length != 0">
+            <page-paging [pagingHeader]="pagingHeader" 
+                [productsCount]="productsCount" 
+                (increasePageNumber)="increasePageNumber()" 
+                (decreasePageNumber)="decreasePageNumber()">
+            </page-paging>
+        </ng-template>
+    </main>
+</div>

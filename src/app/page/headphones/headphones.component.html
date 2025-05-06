@@ -1,0 +1,16 @@
+<div>
+    <main>
+        <div class="main-page-product-grid">
+            <ng-container *ngFor="let product of products">
+                <product-grid-item [product]="product" />
+            </ng-container>
+        </div>
+        <ng-template [ngIf]="products.length != 0">
+            <page-paging [pagingHeader]="pagingHeader" 
+                [productsCount]="productsCount" 
+                (increasePageNumber)="increasePageNumber()" 
+                (decreasePageNumber)="decreasePageNumber()">
+            </page-paging>
+        </ng-template>
+    </main>
+</div>

@@ -1,0 +1,17 @@
+<div class="register-wrapper">
+    <div class="register-container">
+        <div class="register-title">Rejestracja</div>
+        <div class="form-fields">
+            <div class="form-field">
+                <custom-input type="text" [defaultPlaceholder]="false" name="register-email" [disabled]="false" placeholder="E-mail" defaultValue="" (onChange)="updateUserData('email', $event)"></custom-input>
+            </div>
+            <div class="form-field">
+                <custom-input type="password" [defaultPlaceholder]="false" name="register-password" [disabled]="false" placeholder="Hasło" defaultValue="" (onChange)="updateUserData('password', $event)"></custom-input>
+            </div>
+            <div class="form-field">
+                <custom-input type="password" [defaultPlaceholder]="false" name="register-password-confirm" [disabled]="false" placeholder="Potwierdź hasło" defaultValue="" (onChange)="setPasswordConfirm($event)"></custom-input>
+            </div>
+        </div>
+        <custom-button (action)="register()" label="Zarejestruj się"></custom-button>
+    </div>
+</div>

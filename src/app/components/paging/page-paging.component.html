@@ -1,0 +1,11 @@
+<div class="main-page-paging">
+    <div class="main-paging-container">
+        <img src="/arrow-left.svg" alt="arrow-left" class="paging-icon" (click)="decreasePageNumber.emit()" />
+        <ng-template [ngIf]="pagingHeader != undefined && productsCount != undefined">
+            <div>
+                {{ pagingHeader!.pageIndex + 1 + " z " + ((productsCount! / pagingHeader!.pageSize) + 1).toFixed(0) }}
+            </div>
+        </ng-template>
+        <img src="/arrow-right.svg" alt="arrow-right" class="paging-icon" (click)="increasePageNumber.emit()" />
+    </div>
+</div>

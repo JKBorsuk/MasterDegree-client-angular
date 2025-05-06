@@ -1,0 +1,12 @@
+<div class="product-grid-item" *ngIf="product != undefined">
+    <div>
+        <div class="product-grid-item-title">{{ product.productName }}</div>
+        <div class="product-grid-item-price">{{ product.price.toString().replace(".", ",") + "$" }}</div>
+    </div>
+    <div>- Kategoria: {{ product.productCategory }}</div>
+    <div>- Wymiary produktu: {{ product.productDimensions }}</div>
+    <div>- Ilość na stanie: {{ product.stockQuantity }}</div>
+    <div>- Okres gwarancji: {{ product.warrantyPeriod + " lata" }}</div>
+    <img *ngIf="isFavorite" class="product-item-fav" src="/red_heart.svg" alt="remove-favorite" (click)="removeFavorite(product.id)" />
+    <img *ngIf="!isFavorite" class="product-item-fav" src="/black_heart.svg" alt="add-favorite" (click)="addFavorite(product.id)" />
+</div>

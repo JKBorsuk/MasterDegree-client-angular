@@ -1,0 +1,10 @@
+<ng-template [ngIf]="message != undefined">
+    <div class="master-degree-dialog">
+        <div class="dialog-container">
+            <div class="dialog-message">
+                {{ message }}
+            </div>
+            <div class="dialog-button" (click)="disableDialog()">Zamknij</div>
+        </div>
+    </div>
+</ng-template>

@@ -1,0 +1,44 @@
+.master-degree-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-container {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1em;
+    z-index: 1;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.dialog-container > .dialog-message {
+
+}
+
+.dialog-container > .dialog-button {
+    cursor: pointer;
+    background-color: white;
+    padding: .25em 1em;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
+    transition: .2s all;
+}
+
+.dialog-container > .dialog-button:active {
+    background-color: black;
+    color: white;
+}

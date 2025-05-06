@@ -1,0 +1,136 @@
+.custom-input-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.custom-input-container > .custom-input-icon-wrapper {
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: .25em;
+}
+
+.custom-input-container > .custom-input-icon-wrapper:not(:last-child) {
+    border-width: 1px 0 1px 0;
+}
+
+.custom-input-container > .custom-input-icon-wrapper:last-child {
+    border-width: 1px 1px 1px 0;
+    border-start-end-radius: 5px;
+    border-end-end-radius: 5px;
+}
+
+
+.custom-input-container > .empty-input-placeholder {
+    position: absolute;
+    left: .5em;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .2s all;
+    width: fit-content;
+    background-color: white;
+    cursor: text;
+}
+
+.custom-input:-webkit-autofill,
+.custom-input:-webkit-autofill:focus {
+    background-color: white !important;
+}
+
+.custom-input:focus {
+    border-color: var(--blue);
+}
+
+.custom-input:focus + label.empty-input-placeholder {
+    color: var(--blue);
+}
+
+.custom-input:focus + label.empty-input-placeholder,
+.custom-input:not(:placeholder-shown) + label.empty-input-placeholder {
+    top: 0;
+    user-select: none;
+    -webkit-user-drag: none;
+    cursor: default;
+}
+
+.custom-input-icon {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.custom-input-container.clickable {
+    cursor: pointer;
+}
+
+.calendar-input-check-icon-wrapper {
+    padding: .5em;
+    height: 100%;
+}
+
+.calendar-input {
+    max-width: 300px;
+    width: 100%;
+}
+
+.custom-input {
+    border-start-start-radius: 5px;
+    border-end-start-radius: 5px;
+    flex: 1;
+    padding: .75em .5em;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.custom-input:-internal-autofill-selected {
+    color: black !important;
+    background-color: white !important;
+}
+
+.custom-input-field {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 1px 1px;
+    border-start-start-radius: 5px;
+    border-end-start-radius: 5px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: .5em;
+    flex: 1;
+}
+
+.calendar-input > .custom-input-field {
+    padding: .75em;
+}
+
+.custom-input[disabled] {
+    border: 1px solid grey;
+}
+
+.custom-input[disabled] + .empty-input-placeholder {
+    color: grey;
+}
+
+.custom-input.no-icon {
+    border-radius: 5px;
+}
+
+.custom-input:focus {
+    outline: none;
+}
+
+.custom-input-container.error > .custom-input,
+.custom-input-container.error > .custom-input-icon-wrapper {
+    border-color: red;
+}
+
+.custom-input-icon-wrapper.clickable {
+    cursor: pointer;
+}

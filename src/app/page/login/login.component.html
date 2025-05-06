@@ -1,0 +1,14 @@
+<div class="login-wrapper">
+    <div class="login-container">
+        <div class="login-title">Logowanie</div>
+        <div class="form-fields">
+            <div class="form-field">
+                <custom-input type="text" [defaultPlaceholder]="false" name="login-email" [disabled]="false" placeholder="E-mail" defaultValue="" (onChange)="updateUserData('email', $event)"></custom-input>
+            </div>
+            <div class="form-field">
+                <custom-input type="password" [defaultPlaceholder]="false" name="login-password" [disabled]="false" placeholder="Hasło" defaultValue="" (onChange)="updateUserData('password', $event)"></custom-input>
+            </div>
+        </div>
+        <custom-button (action)="login()" label="Zaloguj"></custom-button>
+    </div>
+</div>

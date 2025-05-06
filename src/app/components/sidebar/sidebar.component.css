@@ -1,0 +1,45 @@
+.degree-sidebar {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    padding-right: 1em;
+    border-style: dashed;
+    border-color: var(--blue);
+    border-width: 0 1px 0 0;
+    position: sticky;
+    top: 1em;
+}
+
+.degree-sidebar > .sidebar-element {
+    padding: 1em;
+    border-style: solid;
+    border-color: grey;
+    transition: .2s all;
+}
+
+.degree-sidebar > .sidebar-element:first-child {
+    border-width: 1px 1px 1px 1px;
+}
+
+.degree-sidebar > .sidebar-element:not(:first-child) {
+    border-width: 0 1px 1px 1px;
+}
+
+.degree-sidebar > .sidebar-element:not(.active) {
+    cursor: pointer;
+}
+
+.degree-sidebar > .sidebar-element:hover,
+.degree-sidebar > .sidebar-element.active {
+    background-color: var(--blue);
+}
+
+@media screen and (max-width: 572px) {
+    .degree-sidebar {
+        border: none;
+        padding: 0;
+        max-width: 100%;
+    }
+}

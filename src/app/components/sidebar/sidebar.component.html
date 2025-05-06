@@ -1,0 +1,15 @@
+<div class="degree-sidebar">
+    <div class="sidebar-element" [ngClass]="{ active: router.url == '/' + Paths.HOME}" (click)="router.navigate([Paths.HOME])">Strona główna</div>
+    <div class="sidebar-element" [ngClass]="{ active: router.url == '/' + Paths.MONITORS }" (click)="router.navigate([Paths.MONITORS])">Monitory</div>
+    <div class="sidebar-element" [ngClass]="{ active: router.url == '/' + Paths.HEADPHONES }" (click)="router.navigate([Paths.HEADPHONES])">Słuchawki</div>
+    <div class="sidebar-element" [ngClass]="{ active: router.url == '/' + Paths.LAPTOPS }" (click)="router.navigate([Paths.LAPTOPS])">Laptopy</div>
+    <div class="sidebar-element" [ngClass]="{ active: router.url == '/' + Paths.ALL }" (click)="router.navigate([Paths.ALL])">Wszystkie dane</div>
+    <ng-template [ngIf]="isLogged == false">
+        <div class="sidebar-element" [ngClass]="{ active: router.url == '/' + Paths.LOGIN }" (click)="router.navigate([Paths.LOGIN])">Zaloguj</div>
+        <div class="sidebar-element" [ngClass]="{ active: router.url == '/' + Paths.REGISTER }" (click)="router.navigate([Paths.REGISTER])">Rejestracja</div>
+    </ng-template>
+    <ng-template [ngIf]="isLogged == true">
+        <div class="sidebar-element" [ngClass]="{ active: router.url == '/' + Paths.FAVORITES }" (click)="router.navigate([Paths.FAVORITES])">Ulubione</div>
+        <div class="sidebar-element" (click)="logout()">Wyloguj</div>
+    </ng-template>
+</div>

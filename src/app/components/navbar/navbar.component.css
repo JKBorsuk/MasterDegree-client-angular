@@ -1,0 +1,6 @@
+.degree-navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    background-color: var(--blue);
+}
