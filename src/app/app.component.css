@@ -9,7 +9,7 @@ master-degree-sidebar {
     flex-direction: column;
 }
 
-@media screen and (min-width) {
+@media screen and (min-width: 573px) {
     master-degree-sidebar {
         max-width: 300px;
     }
