@@ -1,5 +1,4 @@
 master-degree-sidebar {
-    max-width: 300px;
     width: 100%;
 }
 
@@ -8,4 +7,10 @@ master-degree-sidebar {
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (min-width) {
+    master-degree-sidebar {
+        max-width: 300px;
+    }
 }

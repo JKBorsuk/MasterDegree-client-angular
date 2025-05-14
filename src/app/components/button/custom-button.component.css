@@ -14,6 +14,7 @@ button.custom-button {
     text-align: center;
     min-width: 175px;
     cursor: pointer;
+    width: 100%;
     font-weight: 500;
     border: 1px solid var(--blue);
     border-radius: 5px;

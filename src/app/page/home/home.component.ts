@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { BehaviorSubject } from "rxjs";
 import PagingHeader from "../../model/dto/pagingHeader";
 import Product from "../../model/entity/product";
-import ProductService from "../../service/product.service";
+import { ProductService } from "../../service/product.service";
 import ApiResponse from "../../model/dto/api-response";
 import PagingContent from "../../model/dto/pagingContent";
 

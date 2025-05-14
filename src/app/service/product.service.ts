@@ -46,5 +46,3 @@ export class ProductService  {
         return this.http.post<ApiResponse<number>>(`${Constrains.API_URL}/data/remove-favorite`, favoriteProductDto);
     }
 }
-
-export default ProductService;

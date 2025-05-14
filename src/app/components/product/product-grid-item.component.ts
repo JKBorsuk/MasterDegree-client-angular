@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 import Product from "../../model/entity/product";
 import FavoriteProductDto from "../../model/dto/favoriteProductDto";
 import ApiResponse from "../../model/dto/api-response";
-import ProductService from "../../service/product.service";
+import { ProductService } from "../../service/product.service";
 import { DialogService } from "../../service/dialog.service";
 
 

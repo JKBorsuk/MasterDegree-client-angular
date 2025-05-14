@@ -1,3 +1,3 @@
 export const Constrains = {
-    API_URL: "https://localhost:7029"
+    API_URL: "https://api-master-degree.kubaborsuk.pl"
 }

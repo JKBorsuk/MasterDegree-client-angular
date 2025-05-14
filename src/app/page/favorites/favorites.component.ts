@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { BehaviorSubject } from "rxjs";
-import ProductService from "../../service/product.service";
+import { ProductService } from "../../service/product.service";
 import Product from "../../model/entity/product";
 import PagingHeader from "../../model/dto/pagingHeader";
 import ApiResponse from "../../model/dto/api-response";

@@ -2,8 +2,8 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Constrains } from "../const/Constrains";
 import { Observable } from "rxjs";
-import AuthenticateUserDto from "../model/dto/authenticateUserDto";
-import AuthorizeUserDto from "../model/dto/authorizeUserDto";
+import { AuthenticateUserDto } from "../model/dto/authenticateUserDto";
+import { AuthorizeUserDto } from "../model/dto/authorizeUserDto";
 import ApiResponse from "../model/dto/api-response";
 import UserDto from "../model/dto/userDto";
 

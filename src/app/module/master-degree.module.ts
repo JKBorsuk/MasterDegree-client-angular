@@ -3,7 +3,7 @@ import { CustomButton } from "../components/button/custom-button.component";
 import { PagePaging } from "../components/paging/page-paging.component";
 import { ProductGridItem } from "../components/product/product-grid-item.component";
 import { Home } from "../page/home/home.component";
-import ProductService from "../service/product.service";
+import { ProductService } from "../service/product.service";
 import { ProfileService } from "../service/profile.service";
 import { CommonModule } from "@angular/common";
 import { Headphones } from "../page/headphones/headphones.component";
