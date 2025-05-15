@@ -36,7 +36,9 @@ body {
   display: flex;
   flex-direction: row;
   gap: 1em;
-  margin: 1em;
+  padding: 1em;
+  background-color: white;
+  color: black;
 }
 
 .main-page-content {
