@@ -1,13 +1,13 @@
 import { DataService } from "../../service/data.service";
 import { DialogService } from "../../service/dialog.service";
-import UserDto from "../../model/dto/userDto";
 import { Router } from "@angular/router";
 import { ProfileService } from "../../service/profile.service";
 import { AuthenticateUserDto } from "../../model/dto/authenticateUserDto";
 import { AuthorizeUserDto } from "../../model/dto/authorizeUserDto";
-import ApiResponse from "../../model/dto/api-response";
 import { Paths } from "../../const/Paths";
 import { Component } from "@angular/core";
+import ApiResponse from "../../model/dto/api-response";
+import UserDto from "../../model/dto/userDto";
 
 @Component({
     selector: 'login-page',
